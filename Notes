@@ -1,4 +1,4 @@
--- Crear una app de Vue con Vit
+-- Crear una app de Vue con Vite
 npm create vite@latest
 
 -- En public es posible colocar carpetas como img pero es importante eliminar el ./public y dejar sólo /img/
