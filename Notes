@@ -2,3 +2,40 @@
 npm create vite@latest
 
 -- En public es posible colocar carpetas como img pero es importante eliminar el ./public y dejar sólo /img/
+
+Stade con Vue
+Se utiliza reactive y ref
+
+Ejemplo con Reactive
+
+-- reactive siempre es un objeto
+
+import { reactive } from 'vue'
+
+const libro = reactive({
+    disponible: true,
+    nombre: 'Algoritmos 3',
+    precio:349,
+    ISBN: '0-7546-2641-3
+})
+
+Se acceden a las propiedades con la sintaxis de .
+
+console.log(libro.disponible);
+
+=====================================================================
+
+Ejemplo con Ref
+
+Ref
+Agrupar datos
+Necesita un valor inicial
+
+import { ref } from 'vue'
+
+const clientes = ref([])
+const libro = ref({})
+const auth = ref(false)
+const mensaje = ref('Hola')
+
+
