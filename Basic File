@@ -1,0 +1,15 @@
+<script setup>
+  // Definición de la variable
+  const hola = "Hola Iván";
+  console.log(hola)
+</script>
+
+<template>
+  // Renderizado de la variable
+  <h1>{{ hola }}</h1>
+</template>
+
+<style>
+ // Estilos al componente
+  h1{ text-transform: uppercase; color:red }
+</style>
