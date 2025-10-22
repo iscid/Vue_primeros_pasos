@@ -38,4 +38,15 @@ const libro = ref({})
 const auth = ref(false)
 const mensaje = ref('Hola')
 
+Se accede a sus propiedades de la siguiente forma:
+
+console.log(clientes.value); // Proxy (Intermediario entre objetos/arreglos)
+console.log(clientes.value.filter);
+
+Reescribir en un ref.
+
+clientes.value.push(nuevoCliente)
+auth.value = true;
+mensaje.value = 'Nuevo Texto'
+
 
