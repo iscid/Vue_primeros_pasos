@@ -1,0 +1,31 @@
+-- Inline Handlers
+
+<template>
+  <p>{{ numero }}</p>
+
+  <button type="button" class="btn btn-dark w-100" v-on:click="numero++">
+      Agregar al Carrito
+  </button>
+</template>
+
+----------------------------------------
+
+-- Method Handlers
+
+<script setup>
+import { ref } from "vue";
+
+const numero = ref(0);
+
+const incrementar = () => {
+  numero.value++;
+};
+</script>
+
+<template>
+  <p>{{ numero }}</p>
+
+  <button type="button" class="btn btn-dark w-100" v-on:click="incrementar"> @click="incrementar"
+      Agregar al Carrito
+  </button>
+</template>
